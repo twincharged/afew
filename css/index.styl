@@ -43,21 +43,7 @@ nav.navbar
 section
   position: relative
   h2
-    margin-bottom: 100px
-    &:before
-      left: 32%
-    &:after
-      right: 32%
-    &:before,
-    &:after
-      content: "";
-      width: 10%;
-      height: 2px;
-      background: $introcol;
-      position: absolute;
-      top: 50%;
-      margin-top: -2px;
-      box-shadow: 0 0px 0px rgba(255,255,255,1);
+    margin-bottom: 50px
   h2, h3, h4, h5
     position: relative
     padding-top: 5px
@@ -68,10 +54,12 @@ section
   h3 {font-size: 3.5rem}
   h4 {font-size: 2rem}
   h5 {font-size: 1.3rem}
-  .spaced
-    margin-top: 100px
+  .col-md-4,
+  .col-md-10
+    margin-top: 50px
+    margin-bottom: 50px
   .body-text
-    font-size: 16px
+    font-size: 18px
   .tilt
     content: ""
     pointer-events: none
@@ -195,4 +183,24 @@ footer
   background: $color1
   color: #fff
   font("Open Sans", 1.5rem !important, center)
-// @media 800px
+
+@media screen and (max-width: 767px)
+  .icon-bar
+    background-color: #fff
+  .intro-text span:first-child
+    word-spacing: 4px
+    letter-spacing: 1px
+    font-size: 9.5vw
+  .intro-text span:nth-child(2)
+    font-size: 12vw
+  .intro-text span:nth-child(3)
+    font-size: 16vw
+  .intro-text span:nth-child(2):before,
+  .intro-text span:nth-child(2):after
+    width: 15%
+  .modal-dialog
+    margin: 10px
+    width: 95%
+    height: 90%
+    img
+      width: 90%
