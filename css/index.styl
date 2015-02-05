@@ -27,7 +27,18 @@ nav.navbar
     color: #fff
     font("Open Sans", 1.6rem !important, center)
     &:hover
+      background: #fff
       color: $color1
+    &:focus
+      background: none
+      color: none
+
+  li
+    &.active,
+    &:hover
+      background: #fff
+      a
+        color: $color1
 
 section
   position: relative
