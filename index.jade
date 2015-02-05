@@ -1,0 +1,97 @@
+- var imgSrc = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE4OS42NTYyNSIgeT0iMjUwIiBzdHlsZT0iZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjIzcHQ7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NTAweDUwMDwvdGV4dD48L2c+PC9zdmc+"
+include base
++base()
+  
+  section#intro
+    h1.intro-text
+      span.word1(aria-hidden="true") A Few of My
+      span.word2(aria-hidden="true") Favorite
+      span.word3(aria-hidden="true") Things
+
+  section#services.text-center
+    .tilt
+    h2 Services
+    .container
+      .row
+        .col-md-4
+          .service-icon: i.fa.fa-send
+          h3 Lorem ipsum
+          p.body-text Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+        .col-md-4
+          .service-icon: i.fa.fa-leaf
+          h3 Vivamus sagittis
+          p.body-text Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+        .col-md-4
+          .service-icon: i.fa.fa-money
+          h3 Nullam Quis
+          p.body-text Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+
+  section#about.text-center
+    .tilt
+    h2 About
+    .container
+      .row
+        h3 Mission
+        .col-md-10.col-md-push-1
+          p.body-text Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies.
+
+  section#gallery.text-center
+    .tilt
+    h2 Gallery
+    .container
+      .row
+        .col-md-4: img(type="button" data-toggle="modal" data-target="#im1" src=imgSrc)
+        .col-md-4: img(type="button" data-toggle="modal" data-target="#im2" src=imgSrc)
+        .col-md-4: img(type="button" data-toggle="modal" data-target="#im3" src=imgSrc)
+      .row.spaced
+        .col-md-4: img(type="button" data-toggle="modal" data-target="#im4" src=imgSrc)
+        .col-md-4: img(type="button" data-toggle="modal" data-target="#im5" src=imgSrc)
+        .col-md-4: img(type="button" data-toggle="modal" data-target="#im6" src=imgSrc)
+
+  section#testimonials.text-center
+    .tilt
+    h2 Reviews
+    .container
+      .row
+        .col-md-4
+          h3 John
+          blockquote: p.body-text Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        .col-md-4
+          h3 Bob
+          blockquote: p.body-text Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        .col-md-4
+          h3 Kate
+          blockquote: p.body-text Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+  section#contact.text-center
+    .tilt
+    h2 Contact
+    .container
+      .row
+        .col-md-4
+          i.fa.fa-phone
+          span Phone:
+          br
+          br
+          a(href="tel:602-123-4567") 602-123-4567
+        .col-md-4
+          i.fa.fa-fax
+          span Fax:
+          br
+          br
+          a(href="tel:602-123-4567") 602-123-4567
+        .col-md-4
+          i.fa.fa-envelope
+          span Email:
+          br
+          br
+          a(href="mailto:myemail@gmail.com") myemail@gmail.com
+
+
+
+  +img-modal("im1", imgSrc)
+  +img-modal("im2", imgSrc)
+  +img-modal("im3", imgSrc)
+  +img-modal("im4", imgSrc)
+  +img-modal("im5", imgSrc)
+  +img-modal("im6", imgSrc)
