@@ -10,12 +10,6 @@ body
   font-family: "Open Sans"
   background: $color1
 
-nav
-  
-  .navbar-brand
-    padding: 10px
-    img
-      height: 42px
 
 nav.navbar
   border-bottom: 2px solid transparent
@@ -23,6 +17,12 @@ nav.navbar
   vendor("transition", border-color .5s ease)
   &.active
     border-color: $color2
+  .navbar-brand
+    padding: 10px
+    &:hover
+      background: inherit
+    img
+      height: 42px
   a
     color: #fff
     font("Open Sans", 1.6rem !important, center)
